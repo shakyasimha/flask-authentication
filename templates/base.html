@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>
+            {{ title }} - Flask Test
+        </title>
+        {% else %}
+        <title>
+            Flask Test
+        </title>
+        {% endif %}
+    </head>
+    <body>
+        {% block content %} {% endblock %}
+    </body>
+</html>
